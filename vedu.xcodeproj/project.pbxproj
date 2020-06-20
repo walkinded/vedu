@@ -13,6 +13,7 @@
 		44588947249E184000D291C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44588945249E184000D291C2 /* Main.storyboard */; };
 		4458894C249E184800D291C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4458894A249E184800D291C2 /* LaunchScreen.storyboard */; };
 		44588954249E1C0B00D291C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44588953249E1C0B00D291C2 /* Assets.xcassets */; };
+		F2A06B155F520CC827BF6D7D /* Pods_vedu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08AEFFB38D7704F41D694FB /* Pods_vedu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		4458894B249E184800D291C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4458894D249E184800D291C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44588953249E1C0B00D291C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67321A9E32EF901182A19645 /* Pods-vedu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vedu.release.xcconfig"; path = "Target Support Files/Pods-vedu/Pods-vedu.release.xcconfig"; sourceTree = "<group>"; };
+		882B1457A914C1FCF2DA4A96 /* Pods-vedu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vedu.debug.xcconfig"; path = "Target Support Files/Pods-vedu/Pods-vedu.debug.xcconfig"; sourceTree = "<group>"; };
+		C08AEFFB38D7704F41D694FB /* Pods_vedu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vedu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A06B155F520CC827BF6D7D /* Pods_vedu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17994FD1ABD3EFB71ABCDFE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				882B1457A914C1FCF2DA4A96 /* Pods-vedu.debug.xcconfig */,
+				67321A9E32EF901182A19645 /* Pods-vedu.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		44588933249E184000D291C2 = {
 			isa = PBXGroup;
 			children = (
 				4458893E249E184000D291C2 /* vedu */,
 				4458893D249E184000D291C2 /* Products */,
+				17994FD1ABD3EFB71ABCDFE2 /* Pods */,
+				58ECDEF4B26C6BEBB471F80D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = vedu;
 			sourceTree = "<group>";
 		};
+		58ECDEF4B26C6BEBB471F80D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C08AEFFB38D7704F41D694FB /* Pods_vedu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44588950249E184800D291C2 /* Build configuration list for PBXNativeTarget "vedu" */;
 			buildPhases = (
+				3B976F45A9D8D5DDE8F9B32D /* [CP] Check Pods Manifest.lock */,
 				44588938249E184000D291C2 /* Sources */,
 				44588939249E184000D291C2 /* Frameworks */,
 				4458893A249E184000D291C2 /* Resources */,
+				83C788968C40805A32C53734 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B976F45A9D8D5DDE8F9B32D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vedu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83C788968C40805A32C53734 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vedu/Pods-vedu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vedu/Pods-vedu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vedu/Pods-vedu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44588938249E184000D291C2 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		44588951249E184800D291C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882B1457A914C1FCF2DA4A96 /* Pods-vedu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		44588952249E184800D291C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67321A9E32EF901182A19645 /* Pods-vedu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
