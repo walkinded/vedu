@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		44588947249E184000D291C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44588945249E184000D291C2 /* Main.storyboard */; };
 		4458894C249E184800D291C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4458894A249E184800D291C2 /* LaunchScreen.storyboard */; };
 		44588954249E1C0B00D291C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44588953249E1C0B00D291C2 /* Assets.xcassets */; };
+		44CB2C08249E4B5F00A8B2D0 /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB2C07249E4B5E00A8B2D0 /* GalleryCollectionView.swift */; };
+		44CB2C0A249E4CE000A8B2D0 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB2C09249E4CE000A8B2D0 /* GalleryCollectionViewCell.swift */; };
+		44CB2C0C249E4D0500A8B2D0 /* DiplomaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CB2C0B249E4D0500A8B2D0 /* DiplomaModel.swift */; };
 		F2A06B155F520CC827BF6D7D /* Pods_vedu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08AEFFB38D7704F41D694FB /* Pods_vedu.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,9 @@
 		4458894B249E184800D291C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4458894D249E184800D291C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44588953249E1C0B00D291C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44CB2C07249E4B5E00A8B2D0 /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
+		44CB2C09249E4CE000A8B2D0 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		44CB2C0B249E4D0500A8B2D0 /* DiplomaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomaModel.swift; sourceTree = "<group>"; };
 		67321A9E32EF901182A19645 /* Pods-vedu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vedu.release.xcconfig"; path = "Target Support Files/Pods-vedu/Pods-vedu.release.xcconfig"; sourceTree = "<group>"; };
 		882B1457A914C1FCF2DA4A96 /* Pods-vedu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vedu.debug.xcconfig"; path = "Target Support Files/Pods-vedu/Pods-vedu.debug.xcconfig"; sourceTree = "<group>"; };
 		C08AEFFB38D7704F41D694FB /* Pods_vedu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vedu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +54,6 @@
 				882B1457A914C1FCF2DA4A96 /* Pods-vedu.debug.xcconfig */,
 				67321A9E32EF901182A19645 /* Pods-vedu.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -76,6 +81,9 @@
 				4458893F249E184000D291C2 /* AppDelegate.swift */,
 				44588941249E184000D291C2 /* SceneDelegate.swift */,
 				44588943249E184000D291C2 /* ViewController.swift */,
+				44CB2C07249E4B5E00A8B2D0 /* GalleryCollectionView.swift */,
+				44CB2C09249E4CE000A8B2D0 /* GalleryCollectionViewCell.swift */,
+				44CB2C0B249E4D0500A8B2D0 /* DiplomaModel.swift */,
 				44588945249E184000D291C2 /* Main.storyboard */,
 				44588953249E1C0B00D291C2 /* Assets.xcassets */,
 				4458894A249E184800D291C2 /* LaunchScreen.storyboard */,
@@ -207,6 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44CB2C0C249E4D0500A8B2D0 /* DiplomaModel.swift in Sources */,
+				44CB2C08249E4B5F00A8B2D0 /* GalleryCollectionView.swift in Sources */,
+				44CB2C0A249E4CE000A8B2D0 /* GalleryCollectionViewCell.swift in Sources */,
 				44588944249E184000D291C2 /* ViewController.swift in Sources */,
 				44588940249E184000D291C2 /* AppDelegate.swift in Sources */,
 				44588942249E184000D291C2 /* SceneDelegate.swift in Sources */,
